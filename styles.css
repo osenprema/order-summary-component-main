@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'Red Hat Display';
+  src: url('./assets/fonts/RedHatDisplay-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Red Hat Display Bold';
+  src: url('./assets/fonts/static/RedHatDisplay-Bold.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Red Hat Display';
+  font-size: 16px;
+  min-height: 100vh;
+  background-color: hsl(225, 100%, 94%);
+  background-image: url('./assets/images/pattern-background-mobile.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+main {
+  width: 330px;
+  margin: 85px auto 15px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: hsl(225, 100%, 98%);
+}
+
+.image-order {
+  width: 100%;
+  border-radius: 20px 20px 0 0;
+}
+
+.body-order {
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-order {
+  font-family: 'Red Hat Display Bold';
+  font-size: 1.6rem;
+  font-weight: 900;
+}
+
+.text-order {
+  margin-top: 25px;
+  font-size: 1.1rem;
+  text-align: center;
+  color: hsl(224, 23%, 55%);
+}
+
+.data-plan {
+  margin-top: 35px;
+  padding: 15px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: hsla(225, 100%, 94%, 0.5);
+}
+
+.description-plan {
+  font-size: 0.9rem;
+  font-size: 700;
+  margin-right: 25px;
+  text-align: center;
+}
+
+.price-plan {
+  font-size: 1rem;
+  color: hsl(224, 23%, 55%);
+}
+
+.data-plan a:hover {
+  text-decoration: none;
+  color: hsl(245, 83%, 69%);
+}
+
+.paying-order {
+  margin: 40px 0 20px 0;
+  font-size: 1rem;
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  color: hsl(225, 100%, 98%);
+  background-color: hsl(245, 75%, 52%);
+  cursor: pointer;
+  box-shadow: -1px 15px 10px hsla(245, 83%, 69%, 0.3);
+}
+
+.paying-order:hover {
+  background-color: hsl(245, 83%, 69%);
+}
+
+.cancel-order {
+  font-size: 0.9rem;
+  border: none;
+  color: hsl(223, 47%, 23%);
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.cancel-order:hover {
+  font-weight: bold;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  color: hsl(223, 47%, 23%);
+}
+
+.attribution a {
+  color: hsl(245, 75%, 52%);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+@media only screen and (min-width: 600px) {
+  body {
+    background-image: url('./assets/images/pattern-background-desktop.svg');
+  }
+
+  main {
+    margin-top: 100px;
+  }
+}
